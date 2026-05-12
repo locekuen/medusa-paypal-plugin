@@ -1,9 +1,7 @@
 # .github/workflows/update-medusa.yml
 name: Update Medusa
 
-on:
-  schedule:
-    - cron: "0 9 * * *" 
+on: 
   workflow_dispatch: # Allow manual runs
 
 jobs:
