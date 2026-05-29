@@ -1,6 +1,6 @@
 {
-  "name": "medusa-starter-plguin",
-  "version": "0.0.1",
+  "name": "medusa-paypal-plugin",
+  "version": "1.0.0",
   "description": "A starter for Medusa plugins.",
   "author": "Medusa (https://medusajs.com)",
   "license": "MIT",
