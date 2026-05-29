@@ -44,6 +44,25 @@ Visit the [Plugins documentation](https://docs.medusajs.com/learn/fundamentals/p
 
 Visit the [Docs](https://docs.medusajs.com/learn/installation#get-started) to learn more about our system requirements.
 
+USE:
+
+1.pnpm install medusa-paypal-plugin
+
+2."medusa-config.ts" add:
+
+
+          {
+            resolve: "medusa-paypal-plugin/modules/paypal",
+            id: "paypal",
+            options: {
+              client_id: process.env.PAYPAL_CLIENT_ID!,
+              client_secret: process.env.PAYPAL_CLIENT_SECRET!,
+              environment: process.env.PAYPAL_ENVIRONMENT || "sandbox",
+              autoCapture: process.env.PAYPAL_AUTO_CAPTURE === "true",
+              webhook_id: process.env.PAYPAL_WEBHOOK_ID,
+            },
+          }
+
 ## What is Medusa
 
 Medusa is a set of commerce modules and tools that allow you to build rich, reliable, and performant commerce applications without reinventing core commerce logic. The modules can be customized and used to build advanced ecommerce stores, marketplaces, or any product that needs foundational commerce primitives. All modules are open-source and freely available on npm.
