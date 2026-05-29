@@ -1,6 +1,6 @@
 {
   "name": "medusa-paypal-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A starter for Medusa plugins.",
   "author": "Medusa (https://medusajs.com)",
   "license": "MIT",
@@ -39,7 +39,7 @@
     "@medusajs/icons": "2.15.3",
     "@medusajs/medusa": "2.15.3",
     "@medusajs/test-utils": "2.15.3",
-    "@medusajs/ui": "4.1.13",
+    "@medusajs/ui": "^4.1.13",
     "@swc/core": "^1.7.28",
     "@types/node": "^20.12.11",
     "@types/react": "^18.3.2",
